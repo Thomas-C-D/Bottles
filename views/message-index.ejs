@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('./partials/head.ejs', {title: 'Welcome to Bottles Island'})%>    
+<body>
+    <div id="sea">
+        <ul id="sea-list">
+            <% let randomarray = [] %>
+            <% function fullyRandom(n) {%>
+                <% randomarray[n] = messages[(Math.floor(Math.random() * messages.length))]; %>
+                <% for (let x = 0; x < n; x++) { %>
+                    <% randomarray[n] == messages[(Math.floor(Math.random() * messages.length))]%>
+                    <% if (randomarray[x]._id == randomarray[n]._id) { %>
+                        <% fullyRandom(n); %>
+                        <% } %>
+                    <% } %>
+                <% }%>
+            <% for (let r = 0; r < 5; r++) {%>
+                <% randomarray[r] = messages[(Math.floor(Math.random() * messages.length))];%>
+                <% for (let x = 0; x < r; x++) { %>
+                    <% if (randomarray[x]._id == randomarray[r]._id) { %>
+                        <%console.log(`Duplicate caught at ` + r + " " + randomarray[r].content)%>
+                        <% fullyRandom(parseInt(r)); %>
+                        <% } %>
+                    <% } %>
+                <% } %>
+
+            <% for (let each in randomarray) {%>
+                <li>
+                    <p><%= randomarray[each].content %></p>
+                </li>
+                <% } %>
+        </ul>
+    </div>
+    <div id="island">
+        <p id="create-message">Create new message</p>
+    </div>
+</body>
+</html>

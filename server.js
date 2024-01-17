@@ -1,12 +1,16 @@
-// Requirements
+// Module requirements
 require('dotenv').config()
 const path = require('path');
 const express = require('express');
 const livereload = require('livereload');
 const connectLiveReload = require('connect-livereload');
 
-// Connection
+
+// db requirements
 const db = require('./models');
+
+// Controller requirements
+const messagesCtrl = require('./controllers/messages')
 
 // Express
 const app = express();
@@ -32,7 +36,12 @@ app.use(connectLiveReload());
 // Mount routes
 
 app.get('/', function (req, res) {
-    res.send('Bottles')
+    db.Message.find({})
+    .then(messages => {
+        res.render('message-index', {
+            messages: messages
+        })
+    })
 });
 
 // Seed Route
@@ -47,6 +56,11 @@ app.get('/seed', function (req, res) {
         })
     })
 });
+
+//  Controller routes
+
+app.use('/messages', messagesCtrl)
+
 // Listening
 app.listen(process.env.PORT, function () {
     console.log(`Listening on port `, process.env.PORT);
