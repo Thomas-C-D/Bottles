@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('./partials/head.ejs', {title: 'Send out a new message.'})%>    
+
+<body>
+    <form method="POST"  action="/comments/create/<%= message._id %>">
+        <textarea name="addition" id="inputadditiont" class="textbar" required></textarea>
+        <input type="submit" value="Add your comment">
+
+    </form>
+    <a href="/messages/<%= message._id %>"><p>Back</p></a>
+
+</body>
+</html>

@@ -11,9 +11,14 @@ const db = require('./models');
 
 // Controller requirements
 const messagesCtrl = require('./controllers/messages')
+const commentsCtrl = require('./controllers/comments')
 
 // Express
 const app = express();
+
+// method-override
+
+const methodOverride = require('method-override')
 
 // Refresh configuration
 const liveReloadServer = livereload.createServer();
@@ -30,8 +35,10 @@ app.set('views', path.join(__dirname, 'views'));
 
 // Middleware
 
-app.use(express.static('public'))
+app.use(express.static('public'));
 app.use(connectLiveReload());
+app.use(express.urlencoded({ extended: true }));
+app.use(methodOverride('_method'));
 
 // Mount routes
 
@@ -57,9 +64,25 @@ app.get('/seed', function (req, res) {
     })
 });
 
+// About route
+
+app.get('/info', function (req, res) {
+    res.render('info')
+});
+
+
+
 //  Controller routes
 
 app.use('/messages', messagesCtrl)
+
+app.use('/', commentsCtrl)
+
+// 404 route
+
+app.get('*', function (req, res) {
+    res.render('404')
+})
 
 // Listening
 app.listen(process.env.PORT, function () {

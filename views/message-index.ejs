@@ -3,13 +3,13 @@
 <%- include('./partials/head.ejs', {title: 'Welcome to Bottles Island'})%>    
 <body>
     <div id="sea">
-        <ul id="sea-list">
             <% let randomarray = [] %>
             <% function fullyRandom(n) {%>
                 <% randomarray[n] = messages[(Math.floor(Math.random() * messages.length))]; %>
                 <% for (let x = 0; x < n; x++) { %>
                     <% randomarray[n] == messages[(Math.floor(Math.random() * messages.length))]%>
                     <% if (randomarray[x]._id == randomarray[n]._id) { %>
+                        <%console.log('re-duplicate caught')%>
                         <% fullyRandom(n); %>
                         <% } %>
                     <% } %>
@@ -23,16 +23,18 @@
                         <% } %>
                     <% } %>
                 <% } %>
-
             <% for (let each in randomarray) {%>
-                <li>
-                    <p><%= randomarray[each].content %></p>
-                </li>
+                <a href="/messages/<%= randomarray[each]._id%>">
+                <div>
+                    <p>Message</p>
+                </div>
+                </a>
                 <% } %>
-        </ul>
+        
     </div>
     <div id="island">
-        <p id="create-message">Create new message</p>
+        <a href="/messages/new"><p id="create-message">Create new message</p></a>
     </div>
+    <a href="/info"><p>Info</p></a>
 </body>
 </html>

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('./partials/head.ejs', {title: 'Send out a new message.'})%>    
+
+<body>
+    <form method="POST"  action="/messages">
+        <textarea name="content" id="inputcontent" class="textbar" required></textarea>
+        <input type="submit" value="Bottle your message">
+
+    </form>
+    <a href="/"><p>Back</p></a>
+
+</body>
+</html>

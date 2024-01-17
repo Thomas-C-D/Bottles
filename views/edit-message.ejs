@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('./partials/head.ejs', {title: 'Write over this message.'})%>    
+
+<body>
+    <form method="POST"  action="/messages/<%= message._id %>?_method=PUT">
+        <textarea name="content" id="inputcontent" class="textbar"></textarea><br>
+        <input type="submit" value="Write over message">
+    </form>
+    <a href="/"><p>Back</p></a>
+</body>
+</html>
