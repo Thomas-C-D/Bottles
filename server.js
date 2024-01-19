@@ -20,13 +20,6 @@ const app = express();
 
 const methodOverride = require('method-override')
 
-// Refresh configuration
-const liveReloadServer = livereload.createServer();
-liveReloadServer.server.once('connection', () => {
-    setTimeout(() => {
-        liveReloadServer.refresh('/');
-    }, 100);
-});
 
 // App configuration
 
@@ -35,10 +28,20 @@ app.set('views', path.join(__dirname, 'views'));
 
 // Middleware
 
-app.use(express.static('public'));
-app.use(connectLiveReload());
+if (process.env.ON_HEROKU === 'false') {
+    const liveReloadServer = livereload.createServer();
+    liveReloadServer.server.once('connection', () => {
+        setTimeout(() => {
+            liveReloadServer.refresh("/");
+        }, 100);
+    });
+    app.use(connectLiveReload());
+}
+
 app.use(express.urlencoded({ extended: true }));
+app.use(express.static('public'))
 app.use(methodOverride('_method'));
+
 
 // Mount routes
 

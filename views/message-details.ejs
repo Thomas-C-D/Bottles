@@ -2,6 +2,9 @@
 <html lang="en">
     <%- include('./partials/head.ejs', {title: 'Found a message in a bottle...'})%> 
 <body>
+    <br>
+    <br>
+    <section id="paper">
     <p><%= message.content%></p>
     <% for (let comment in message.comments) { %>
         <p><%= message.comments[comment].addition %></p><br>
@@ -14,7 +17,8 @@
             <span><input type="submit" value="Delete" class="button"></span>
         </form>
     </div>
+   
     <a href="/"><p>Back</p></a>
-
+    </section>
 </body>
 </html>

@@ -6,21 +6,25 @@
 body {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     font-family: "PeanutMoney";
     font-weight: normal;
     font-style: normal;
     font-size: 30px;
     animation: font-animate .2s linear infinite;
+    background-color: #010626FF;
     
 }
 
 #index-body {
     background-image: url("../assets/BottlesBackground.png");
     background-size: cover;
+    background-repeat: no-repeat;
 }
 a {
     text-decoration: none;
-    color: white;
+    color: #010626FF;
 }
 #sky {
     display: flex;
@@ -28,21 +32,20 @@ a {
     justify-content: center;
     align-items: center;
     position: relative;
-    top: 50px;
+    top: 70px;
 }
 
 #skylogo {
-    width: 200px;
-    height: 70px;
+    width: 130px;
+    height: 60px;
     
 
 }
 
 #sea {
-    position: relative;
-    top: 250px;
+    position: absolute;
+    top: 400px;
     width: 100%;
-    height: 300px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -72,26 +75,39 @@ a {
 }
 
 
-
-
-
-
-
-
-
-
-
-
 #island {
-    width: 100%;
-    height: 200px;
-    display: none;
-    flex-direction: column;
+    position: relative;
+    top: 500px;
+    display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-color: black;
-    color: white;
     text-decoration: none;
+}
+
+#island>a {
+    color: black;
+}
+#message-set {
+    width: 130px;
+    height: 80px;
+    position: relative;
+    right: 200px;
+    bottom: 300px;
+    
+}
+
+#info {
+    position: absolute;
+    bottom: 25px;
+    right: 200px;
+    color: black;
+}
+
+#paper {
+    width: 1000px;
+    height: 600px;
+    background-color: white;
 }
 
 @keyframes font-animate {   
