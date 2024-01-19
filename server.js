@@ -43,12 +43,7 @@ app.use(methodOverride('_method'));
 // Mount routes
 
 app.get('/', function (req, res) {
-    db.Message.find({})
-    .then(messages => {
-        res.render('message-index', {
-            messages: messages
-        })
-    })
+    res.redirect('/messages')
 });
 
 // Seed Route
@@ -59,7 +54,7 @@ app.get('/seed', function (req, res) {
         db.Message.insertMany(db.seedMessages)
         .then(addedMessages => {
             console.log(`Added ${addedMessages.length} messages to the database`)
-            res.json(addedMessages)
+            res.redirect('/messages')
         })
     })
 });

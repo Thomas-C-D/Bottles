@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <%- include('./partials/head.ejs', {title: 'Welcome to Bottles Island'})%>    
-<body>
+<body id="index-body">
+    <div id="sky">
+    <img src="/assets/LogoSprite.gif" alt="BOTTL" id="skylogo">
+    </div>
     <div id="sea">
             <% let randomarray = [] %>
             <% function fullyRandom(n) {%>
@@ -15,6 +18,7 @@
                     <% } %>
                 <% }%>
             <% for (let r = 0; r < 5; r++) {%>
+                <%if (messages.length > r) {%>
                 <% randomarray[r] = messages[(Math.floor(Math.random() * messages.length))];%>
                 <% for (let x = 0; x < r; x++) { %>
                     <% if (randomarray[x]._id == randomarray[r]._id) { %>
@@ -22,12 +26,11 @@
                         <% fullyRandom(parseInt(r)); %>
                         <% } %>
                     <% } %>
+                    <% } %>
                 <% } %>
             <% for (let each in randomarray) {%>
-                <a href="/messages/<%= randomarray[each]._id%>">
-                <div>
-                    <p>Message</p>
-                </div>
+                <a href="/messages/<%= randomarray[each]._id%>" class="message">
+                    <img src="/assets/BottleSprite.gif" alt="Message" class="bottlesprite" id="bottlesprite-<%= each %>">
                 </a>
                 <% } %>
         
