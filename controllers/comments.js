@@ -5,6 +5,7 @@ const router = express.Router()
 const db = require('../models')
 
 // Routes
+// ------------
 
 router.get('/comments/new/:messageId', (req, res) => {
     db.Message.findById(

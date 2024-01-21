@@ -4,12 +4,16 @@
     <link rel="stylesheet" href="/styles/new-message.css">
 <body>
     <section id="paper">
+        <div id="writing">
     <form method="POST"  action="/messages">
         <textarea name="content" id="inputcontent" class="textbar" required></textarea>
-        <input type="submit" value="Bottle your message">
-
+        <div class="option">
+            <img src="/assets/BottleMessageSprite.png" alt="">
+            <input type="submit" class="button"  value="Bottle your message">
+        </div>
     </form>
-    <a href="/"><p>Back</p></a>
+    <div class="option"><img src="/assets/BackSprite.png" alt=""><a href="/"><p>Back</p></a></div>
+    </div>
     </section>
 </body>
 </html>

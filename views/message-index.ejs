@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<%- include('./partials/head.ejs', {title: 'Welcome to Bottles Island'})%>    
+<%- include('./partials/head.ejs', {title: 'Welcome to Bottl Island'})%>    
 <link rel="stylesheet" href="/styles/message-index.css">
 <body>
     <div id="sky">
@@ -14,7 +14,6 @@
                 <% for (let x = 0; x < n; x++) { %>
                     <% randomarray[n] == messages[(Math.floor(Math.random() * messages.length))]%>
                     <% if (randomarray[x]._id == randomarray[n]._id) { %>
-                        <%console.log('re-duplicate caught')%>
                         <% fullyRandom(n); %>
                         <% } %>
                     <% } %>
@@ -24,12 +23,11 @@
                 <% randomarray[r] = messages[(Math.floor(Math.random() * messages.length))];%>
                 <% for (let x = 0; x < r; x++) { %>
                     <% if (randomarray[x]._id == randomarray[r]._id) { %>
-                        <%console.log(`Duplicate caught at ` + r + " " + randomarray[r].content)%>
                         <% fullyRandom(parseInt(r)); %>
-                        <% } %>
-                    <% } %>
-                    <% } %>
+                     <% } %>
                 <% } %>
+                <% } %>
+            <% } %>
             <% for (let each in randomarray) {%>
                 <div class="message">
                 <a href="/messages/<%= randomarray[each]._id%>" >

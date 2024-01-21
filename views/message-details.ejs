@@ -8,22 +8,26 @@
     <div id="paper">
    
     
-        <section id="details">
-        <div id="message-content">
-            <p><%= message.content%></p>
+        <section id="writing">
+        <div id="message-details">
+            <div id="message-content"><p><%= message.content%></p></div>
             <% for (let comment in message.comments) { %>
                 <p><%= message.comments[comment].addition %></p><br>
                 <% } %>
             </div>
+            <div id="options">
             <% if (message.comments.length == 0 ) { %>
-                <a href="/messages/<%= message._id %>/edit"><span>Edit</span></a>
+                <div class="option"><img src="/assets/EditSprite.png" alt=""><a href="/messages/<%= message._id %>/edit"><span>Edit</span></a></div>
                 <% } %>
-                <a href="/comments/new/<%= message._id %>"><span>Comment</span></a>
-                <form method="POST"  action="/messages/<%= message._id %>?_method=DELETE">
-                    <span><input type="submit" value="Delete" class="button"></span>
+                <div class="option"><img src="/assets/CommentSprite.png" alt=""><a href="/comments/new/<%= message._id %>"><span>Comment</span></a></div>
+                <div class="option">
+                    <img src="/assets/DeleteSprite.png" alt="">
+                    <form method="POST"  action="/messages/<%= message._id %>?_method=DELETE">
+                    <span><input type="submit" value="Delete" class="button" src="/assets/DeleteSprite.png"></span>
                 </form>
-                <a href="/"><p>Back</p></a>
-           
+            </div>
+                <div class="option"><img src="/assets/BackSprite.png" alt=""><a href="/"><p>Back</p></a></div>
+            </div>
         </section>
     </div>
 </body>

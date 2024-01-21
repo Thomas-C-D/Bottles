@@ -4,11 +4,16 @@
     <link rel="stylesheet" href="/styles/edit-message.css">
 <body>
     <section id="paper">
-    <form method="POST"  action="/messages/<%= message._id %>?_method=PUT">
-        <textarea name="content" id="inputcontent" class="textbar"></textarea><br>
-        <input type="submit" value="Write over message">
-    </form>
-    <a href="/"><p>Back</p></a>
+        <div id="writing">
+        <form method="POST"  action="/messages/<%= message._id %>?_method=PUT">
+            <textarea name="content" id="inputcontent" class="textbar"></textarea><br>
+            <div class="option">
+                <img src="/assets/EditSprite.png" alt="">
+                <input type="submit"  class="button" value="Write over message">
+            </div>
+        </form>
+    <div class="option"><img src="/assets/BackSprite.png" alt=""><a href="/messages/<%= message._id %>"><p>Back</p></a></div>
     </section>
+</div>
 </body>
 </html>

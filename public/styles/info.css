@@ -4,3 +4,30 @@ body {
     background-size: cover;
     color: white;
 }
+
+ a {
+    color: yellow;
+    text-decoration: none;
+}
+
+.star {
+    position: absolute
+}
+
+.star:first-child {
+    position: absolute;
+    top: 100px;
+    right: 50px;
+}
+
+.star:nth-child(2) {
+    bottom: 100px;
+    left: 50px;
+}
+
+.option {
+
+    position: absolute;
+    bottom: 50px;
+    left: 200px;
+}

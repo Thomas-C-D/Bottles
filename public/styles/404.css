@@ -4,3 +4,38 @@ body {
     background-size: cover;
     color: white;
 }
+
+.option {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+
+#text {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    
+}
+#text * {
+    display: flex;
+    justify-content: left;
+    width: 700px;
+    height: 100px;
+}
+
+#tree {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 30px;
+}
+
+.option * {
+    color: #010626FF;
+    text-decoration: none;
+}

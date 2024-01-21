@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-    <%- include('./partials/head.ejs', {title: 'Send out a new message.'})%>    
-    <link rel="stylesheet" href="/styles/new-comment.css">
+    <%- include('./partials/head.ejs', {title: 'Add a comment.'})%>    
+    <link rel="stylesheet" href="/styles/new-comAdd a comment
 <body>
     <section id="paper">
+        <div id="writing">
     <form method="POST"  action="/comments/create/<%= message._id %>">
-        <textarea name="addition" id="inputadditiont" class="textbar" required></textarea>
-        <input type="submit" value="Add your comment">
-
+        <textarea name="addition" id="inputcontent" class="textbar" required></textarea>
+        <div class="option">
+            <img src="/assets/CommentSprite.png" alt="">
+        <input type="submit"  class="button" value="Add your comment">
+            </div>
     </form>
-    <a href="/messages/<%= message._id %>"><p>Back</p></a>
+    <div class="option"><img src="/assets/BackSprite.png" alt=""><a href="/messages/<%= message._id %>"><p>Back</p></a></div>
+    </div>
     </section>
 </body>
 </html>
