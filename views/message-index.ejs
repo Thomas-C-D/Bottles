@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <%- include('./partials/head.ejs', {title: 'Welcome to Bottles Island'})%>    
-<body id="index-body">
+<link rel="stylesheet" href="/styles/message-index.css">
+<body>
     <div id="sky">
     <img src="/assets/LogoSprite.gif" alt="BOTTL" id="skylogo">
     </div>
+    <div class="star"><img src="/assets/StarSprite.gif" alt=""></div>
     <div id="sea">
             <% let randomarray = [] %>
             <% function fullyRandom(n) {%>
@@ -29,16 +31,19 @@
                     <% } %>
                 <% } %>
             <% for (let each in randomarray) {%>
-                <a href="/messages/<%= randomarray[each]._id%>" class="message">
+                <div class="message">
+                <a href="/messages/<%= randomarray[each]._id%>" >
                     <img src="/assets/BottleSprite.gif" alt="Message" class="bottlesprite" id="bottlesprite-<%= each %>">
                 </a>
+                </div>
                 <% } %>
         
     </div>
-    <a href="/messages/new"><img src="/assets/CreateMessageSet.png" alt="" id="message-set"></a>
+    
     <div id="island">
-        <a href="/messages/new"><p id="create-message">Create new message</p></a>
-    </div>
+    <a href="/messages/new"><img src="/assets/CreateMessageSet.png" alt="" id="message-set"></a>
+    <div id="create-message"><a href="/messages/new"><p>Create new message</p></a></div>
+   </div>
     <a href="/info" id="info"><p>Info</p></a>
 </body>
 </html>
