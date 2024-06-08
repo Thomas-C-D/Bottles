@@ -39,3 +39,266 @@ body {
     color: #010626FF;
     text-decoration: none;
 }
+
+
+@media (width: 375px) and (height: 667px) {
+    body {
+        background-size: 100% 100%;
+    }
+    #tree {
+        scale: 80%;
+        position: absolute;
+        right: -30px;
+    }
+    .option {
+        scale: 80%;
+        position: absolute;
+        left: -30px;
+    }
+    #text {
+        scale: 70%;
+        position: absolute;
+        left: -90px;
+        font-size: 25px;
+    }
+}
+
+@media (width: 414px) and (height: 896px) {
+    body {
+        background-size: 100% 100%;
+    }
+    #tree {
+        scale: 80%;
+        position: absolute;
+        right: -30px;
+        bottom: 30px;
+    }
+    .option {
+        scale: 90%;
+        position: absolute;
+        left: -20px;
+    }
+    #text {
+        scale: 70%;
+        position: absolute;
+        left: -90px;
+        font-size: 30px;
+    }
+}
+
+@media (width: 390px) and (height: 844px) {
+    body {
+        background-size: 100% 100%;
+    }
+    #tree {
+        scale: 80%;
+        position: absolute;
+        right: -30px;
+        bottom: 30px;
+    }
+    .option {
+        scale: 90%;
+        position: absolute;
+        left: -20px;
+    }
+    #text {
+        scale: 60%;
+        position: absolute;
+        left: -130px;
+        font-size: 30px;
+    }
+}
+
+@media (width: 430px) and (height: 932px), (width: 412px) and (height: 915px), (width: 360px) and (height: 740px) {
+    body {
+        background-size: 100% 100%;
+    }
+    #tree {
+        scale: 80%;
+        position: absolute;
+        right: -30px;
+        bottom: 30px;
+    }
+    .option {
+        scale: 90%;
+        position: absolute;
+        left: -20px;
+    }
+    #text {
+        scale: 70%;
+        position: absolute;
+        left: -100px;
+        font-size: 30px;
+    }
+}
+
+@media (width: 768px) and (height: 1024px) {
+    body {
+        background-size: 80% 80%;
+        
+    }
+    #tree {
+        scale: 80%;
+        position: absolute;
+        right: 170px;
+        bottom: 250px;
+    }
+    .option {
+        scale: 90%;
+        position: absolute;
+        left: 0px;
+        bottom: 200px;
+    }
+    #text {
+        scale: 60%;
+        position: absolute;
+        left: -130px;
+        font-size: 30px;
+    }
+}
+
+@media (width: 1024px) and (height: 1366px), (width: 912px) and (height: 1368px) {
+    body {
+        background-size: 100% 100%;
+        
+    }
+    #tree {
+        scale: 120%;
+        position: absolute;
+        right: 170px;
+        bottom: 250px;
+    }
+    .option {
+        scale: 130%;
+        position: absolute;
+        left: 30px;
+        bottom: 100px;
+    }
+    #text {
+        scale: 130%;
+        position: absolute;
+        left: 200px;
+        top: 60px;
+        font-size: 30px;
+    }
+}
+
+@media (width: 540px) and (height: 720px) {
+    body {
+        background-size: 120% 125%;
+        
+    }
+    #tree {
+        scale: 100%;
+        position: absolute;
+        right: -50px;
+        top: 200px;
+    }
+    .option {
+        scale: 100%;
+        position: absolute;
+        left: 30px;
+        bottom: -100px;
+    }
+    #text {
+        scale: 80%;
+        position: absolute;
+        left: 00px;
+        top: 60px;
+        font-size: 30px;
+    }
+}
+
+
+@media (width: 344px) and (height: 882px) {
+    body {
+        background-size: 100% 100%;
+        
+    }
+    #tree {
+        scale: 70%;
+        position: absolute;
+        right: -50px;
+        top: 200px;
+    }
+    .option {
+        scale: 80%;
+        position: absolute;
+        left: -30px;
+        bottom: 50px;
+    }
+    #text {
+        scale: 50%;
+        position: absolute;
+        left: -150px;
+        top: 60px;
+        font-size: 30px;
+    }
+}
+
+@media (width: 853px) and (height: 1280px) {
+    #tree {
+     
+        position: absolute;
+      
+        top: 450px;
+    }
+
+    .option {
+        scale: 140%;
+    }
+}
+
+
+@media (width: 412px) and (height: 914px) {
+    body {
+        background-size: 100% 100%;
+        
+    }
+    #tree {
+        scale: 70%;
+        position: absolute;
+        right: -50px;
+        top: 200px;
+    }
+    .option {
+        scale: 80%;
+        position: absolute;
+        left: -30px;
+        bottom: 50px;
+    }
+    #text {
+        scale: 60%;
+        position: absolute;
+        left: -100px;
+        top: 60px;
+        font-size: 30px;
+    }
+}
+
+@media (width: 1024px) and (height: 600px) {
+    body {
+        background-size: 100% 100%;
+        
+    }
+    #tree {
+        scale: 70%;
+        position: absolute;
+        right: 100px;
+        top: 00px;
+    }
+    .option {
+        scale: 80%;
+        position: absolute;
+        left: -30px;
+        bottom: 50px;
+    }
+    #text {
+        scale: 70%;
+        position: absolute;
+        left: -50px;
+        top: 60px;
+        font-size: 30px;
+    }
+}
+
