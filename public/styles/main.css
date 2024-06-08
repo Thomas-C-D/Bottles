@@ -77,7 +77,6 @@ body {
     0% {font-family: "PeanutMoney";
         
         
-        
     }
     50% {font-family: "Comicoro";
        
@@ -92,49 +91,324 @@ body {
         
     }
         100% {font-family: "PeanutMoney";
+   
         
         
+        }
+}
+
+@media (width: 375px) and (height: 667px) {
+    #paper {
+        scale: 35%;
+        position: absolute;
+
+    }
+    #paper #message-details #message-content {
+        width: 100%;
+    }
+    #paper #message-details #message-content p {
+        width: 100%;
+        letter-spacing: .25px;
+        text-align: center;
+        font-size: 50px;
+    }
+    #paper .option {
+        scale: 130%;
+    }
+    #paper #options {
+        position: absolute;
+        top: 500px;
+    }
+}
+
+@media (width: 414px) and (height: 896px) {
+    #paper {
+        scale: 50%;
+        position: absolute;
+
+    }
+    #paper #message-details #message-content {
+        width: 100%;
+    }
+    #paper #message-details #message-content p {
+        width: 100%;
+        letter-spacing: .25px;
+        text-align: center;
+        font-size: 50px;
+    }
+    #paper .option {
+        scale: 130%;
+    }
+    #paper #options {
+        position: absolute;
+        top: 500px;
+    }
+}
+
+@media (width: 390px) and (height: 844px) {
+    #paper {
+        scale: 40%;
+        position: absolute;
+
+    }
+    #paper #message-details #message-content {
+        width: 100%;
+    }
+    #paper #message-details #message-content p {
+        width: 100%;
+        letter-spacing: .25px;
+        text-align: center;
+        font-size: 50px;
+    }
+    #paper .option {
+        scale: 130%;
+    }
+    #paper #options {
+        position: absolute;
+        top: 500px;
+    }
+}
+
+@media (width: 430px) and (height: 932px) {
+    #paper {
+        scale: 60%;
+        position: absolute;
+
+    }
+    #paper #message-details #message-content {
+        width: 100%;
+    }
+    #paper #message-details #message-content p {
+        width: 100%;
+        letter-spacing: .25px;
+        text-align: center;
+        font-size: 50px;
+    }
+    #paper .option {
+        scale: 130%;
+    }
+    #paper #options {
+        position: absolute;
+        top: 500px;
+    }
+}
+
+@media (width: 412px) and (height: 915px) {
+    #paper {
+        scale: 50%;
+        position: absolute;
+
+    }
+    #paper #message-details #message-content {
+        width: 100%;
+    }
+    #paper #message-details #message-content p {
+        width: 100%;
+        letter-spacing: .25px;
+        text-align: center;
+        font-size: 50px;
+    }
+    #paper .option {
+        scale: 130%;
+    }
+    #paper #options {
+        position: absolute;
+        top: 500px;
+    }
+}
+
+@media (width: 360px) and (height: 740px) {
+    #paper {
+        scale: 40%;
+        position: absolute;
         
     }
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+    #paper #message-details #message-content {
+        width: 100%;
+    }
+    #paper #message-details #message-content p {
+        width: 100%;
+        letter-spacing: .25px;
+        text-align: center;
+        font-size: 50px;
+    }
+    #paper .option {
+        scale: 130%;
+    }
+    #paper #options {
+        position: absolute;
+        top: 500px;
+    }
 }
+
+@media (width: 768px) and (height: 1024px), (width: 820px) and (height: 1180px) {
+    #paper {
+        scale: 80%;
+        position: absolute;
+        
+    }
+    #paper #message-details #message-content {
+        width: 100%;
+    }
+    #paper #message-details #message-content p {
+        width: 100%;
+        letter-spacing: .25px;
+        text-align: center;
+        font-size: 50px;
+    }
+    #paper .option {
+        scale: 130%;
+    }
+    #paper #options {
+        position: absolute;
+        top: 500px;
+    }
+}
+
+@media (width: 1024px) and (height: 1366px), (width: 912px) and (height: 1368px) {
+    #paper {
+        scale: 90%;
+        position: absolute;
+        
+    }
+    #paper #message-details #message-content {
+        width: 100%;
+    }
+    #paper #message-details #message-content p {
+        width: 100%;
+        letter-spacing: .25px;
+        text-align: center;
+        font-size: 50px;
+    }
+    #paper .option {
+        scale: 130%;
+    }
+    #paper #options {
+        position: absolute;
+        top: 500px;
+    }
+}
+
+@media (width: 540px) and (height: 720px) {
+    #paper {
+        scale: 50%;
+        position: absolute;
+        left: -250px;
+    }
+    #paper #message-details #message-content {
+        width: 100%;
+    }
+    #paper #message-details #message-content p {
+        width: 100%;
+        letter-spacing: .25px;
+        text-align: center;
+        font-size: 50px;
+    }
+    #paper .option {
+        scale: 130%;
+    }
+    #paper #options {
+        position: absolute;
+        top: 500px;
+    }
+}
+
+@media (width: 344px) and (height: 882px) {
+    #paper {
+        scale: 40%;
+        position: absolute;
+        
+    }
+    #paper #message-details #message-content {
+        width: 100%;
+    }
+    #paper #message-details #message-content p {
+        width: 100%;
+        letter-spacing: .25px;
+        text-align: center;
+        font-size: 50px;
+    }
+    #paper .option {
+        scale: 130%;
+    }
+    #paper #options {
+        position: absolute;
+        top: 500px;
+    }
+}
+
+@media (width: 853px) and (height: 1280px) {
+    #paper {
+        scale: 90%;
+        position: absolute;
+        
+    }
+    #paper #message-details #message-content {
+        width: 100%;
+    }
+    #paper #message-details #message-content p {
+        width: 100%;
+        letter-spacing: .25px;
+        text-align: center;
+        font-size: 50px;
+    }
+    #paper .option {
+        scale: 130%;
+    }
+    #paper #options {
+        position: absolute;
+        top: 500px;
+    }
+}
+
+
+@media (width: 412px) and (height: 914px) {
+    #paper {
+        scale: 45%;
+        position: absolute;
+        
+    }
+    #paper #message-details #message-content {
+        width: 100%;
+    }
+    #paper #message-details #message-content p {
+        width: 100%;
+        letter-spacing: .25px;
+        text-align: center;
+        font-size: 50px;
+    }
+    #paper .option {
+        scale: 130%;
+    }
+    #paper #options {
+        position: absolute;
+        top: 500px;
+    }
+}
+
+@media (width: 1024px) and (height: 600px) {
+    #paper {
+        scale: 80%;
+        position: absolute;
+        
+    }
+    #paper #message-details #message-content {
+        width: 100%;
+    }
+    #paper #message-details #message-content p {
+        width: 100%;
+        letter-spacing: .25px;
+        text-align: center;
+        font-size: 50px;
+    }
+    #paper .option {
+        scale: 130%;
+    }
+    #paper #options {
+        position: absolute;
+        top: 500px;
+    }
+}
+
+
+

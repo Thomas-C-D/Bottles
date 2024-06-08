@@ -31,3 +31,123 @@ body {
     bottom: 50px;
     left: 200px;
 }
+
+#info-text {
+    text-align: center;
+    
+}
+
+
+
+@media (width: 375px) and (height: 667px) {
+    #info-text div p {
+        font-size: 20px;
+        letter-spacing: .25px;
+    }
+    
+
+}
+
+@media (width: 414px) and (height: 896px), (width: 390px) and (height: 844px), (width: 430px) and (height: 932px), (width: 412px) and (height: 915px), (width: 360px) and (height: 740px) {
+    #info-text div p {
+        font-size: 30px;
+        letter-spacing: .50px;
+    }
+    
+    #info-text {
+        width: 350px;
+        
+    }
+
+}
+
+@media (width: 768px) and (height: 1024px), (width: 820px) and (height: 1180px) {
+    #info-text div p {
+        font-size: 40px;
+        letter-spacing: .50px;
+    }
+    
+    #info-text {
+        width: 600px;
+        
+    }
+
+
+    .option {
+        scale: 120%;
+    }
+}
+
+@media (width: 1024px) and (height: 1366px), (width: 912px) and (height: 1368px) {
+    #info-text div p {
+        font-size: 55px;
+        letter-spacing: .00px;
+    }
+    
+    #info-text {
+        width: 800px;
+        
+    }
+
+
+    .option {
+        scale: 140%;
+    }
+}
+
+@media (width: 344px) and (height: 882px) {
+    #info-text div p {
+        font-size: 30px;
+        letter-spacing: .5px;
+    }
+    
+    #info-text {
+        width: 250px;
+        
+    }
+
+
+    .option {
+        scale: 140%;
+        position: absolute;
+        right: 300px;
+    }
+}
+
+@media (width: 853px) and (height: 1280px) {
+    #info-text div p {
+        font-size: 55px;
+        letter-spacing: 2.7px;
+    }
+    
+    #info-text {
+        width: 700px;
+        
+    }
+
+
+    .option {
+        scale: 180%;
+        position: absolute;
+        right: 300px;
+    }
+}
+
+@media (width: 412px) and (height: 914px) {
+    #info-text div p {
+        font-size: 30px;
+        letter-spacing: .25px;
+    }
+    
+    #info-text {
+        width: 350px;
+        
+    }
+
+
+    .option {
+        scale: 120%;
+        position: absolute;
+        right: 300px;
+    }
+}

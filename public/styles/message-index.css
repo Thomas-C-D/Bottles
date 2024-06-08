@@ -95,9 +95,6 @@ a {
    display: flex;
    justify-content: center;
    align-items: center;
-   
-   
-    
 }
 #create-message {
     display: flex;
@@ -113,4 +110,491 @@ a {
     right: 200px;
     color: black;
 }
+
+
+@media (width: 375px) and (height: 667px) {
+    body {
+        background-size: 100% 100%;
+    }
+    #sea {
+        scale: 58%;
+        position: absolute;
+        right: 90px;
+    }
+    .star {
+        right: 10px;
+        scale: 50%;
+    }
+    #island {
+        scale: 70%;
+        left: 170px;
+    }
+    #create-message {
+        width: 300px;
+        height: 100px;
+
+    }
+    #create-message a {
+        width: 300px;
+        font-size: 40px;
+    }
+
+    #info {
+        left: 25px;
+        bottom: 5px;
+    }
+}
+
+@media (width: 414px) and (height: 896px), (width: 390px) and (height: 844px) {
+    body {
+        background-size: 100% 100%;
+    }
+    #sea {
+        scale: 60%;
+        position: absolute;
+        right: 90px;
+        bottom: 20px;
+    }
+    .star {
+        right: 10px;
+        scale: 50%;
+    }
+    #island {
+        scale: 70%;
+        left: 170px;
+        bottom: 30px;
+    }
+    #create-message {
+        width: 300px;
+        height: 100px;
+    }
+    #create-message a {
+        width: 300px;
+        font-size: 40px;
+    }
+
+    #info {
+        left: 25px;
+        bottom: 5px;
+        font-size: 35px;
+    }
+}
+
+@media (width: 430px) and (height: 932px), (width: 412px) and (height: 915px) {
+    body {
+        background-size: 100% 100%;
+    }
+    #sea {
+        scale: 60%;
+        position: absolute;
+        right: 80px;
+        bottom: -50px;
+    }
+    .star {
+        right: 10px;
+        scale: 50%;
+    }
+    #island {
+        scale: 70%;
+        left: 170px;
+        bottom: 30px;
+    }
+    #create-message {
+        width: 300px;
+        height: 100px;
+    }
+    #create-message a {
+        width: 300px;
+        font-size: 40px;
+    }
+
+    #info {
+        left: 25px;
+        bottom: 5px;
+        font-size: 35px;
+    }
+}
+
+
+@media (width: 360px) and (height: 740px) {
+    body {
+        background-size: 110% 110%;
+    }
+    #sea {
+        scale: 60%;
+        position: absolute;
+        right: 80px;
+        bottom: -50px;
+    }
+    .star {
+        right: 10px;
+        scale: 50%;
+    }
+    #island {
+        scale: 70%;
+        left: 170px;
+        bottom: -30px;
+    }
+    #create-message {
+        width: 300px;
+        height: 100px;
+    }
+    #create-message a {
+        width: 300px;
+        font-size: 40px;
+    }
+
+    #info {
+        left: 25px;
+        bottom: -35px;
+        font-size: 35px;
+    }
+}
+
+
+@media (width: 768px) and (height: 1024px) {
+    body {
+        background-size: 100% 100%;
+    }
+    #sea {
+        scale: 100%;
+        position: absolute;
+        right: 0px;
+        bottom: 20px;
+    }
+    .star {
+        right: 10px;
+        scale: 90%;
+    }
+    #island {
+        scale: 100%;
+        left: 250px;
+        bottom: 30px;
+    }
+    #create-message {
+        width: 300px;
+        height: 100px;
+    }
+    #create-message a {
+        width: 300px;
+        font-size: 40px;
+    }
+
+    #info {
+        left: 25px;
+        bottom: 5px;
+        font-size: 45px;
+    }
+}
+
+@media (width: 820px) and (height: 1180px) {
+    body {
+        background-size: 100% 100%;
+    }
+    #sea {
+        scale: 100%;
+        position: absolute;
+        right: 0px;
+        bottom: 0px;
+    }
+    .star {
+        right: 10px;
+        scale: 90%;
+    }
+    #island {
+        scale: 100%;
+        left: 280px;
+        bottom: 30px;
+    }
+    #create-message {
+        width: 300px;
+        height: 100px;
+    }
+    #create-message a {
+        width: 300px;
+        font-size: 40px;
+    }
+
+    #info {
+        left: 25px;
+        bottom: 5px;
+        font-size: 45px;
+    }
+}
+
+@media (width: 1024px) and (height: 1366px) {
+    body {
+        background-size: 100% 100%;
+    }
+
+    #sky {
+        scale: 150%;
+    }
+    #sea {
+        scale: 100%;
+        position: absolute;
+        right: 0px;
+        top: 900px;
+    }
+    .star {
+        right: 10px;
+        scale: 90%;
+    }
+    #island {
+        scale: 100%;
+        left: 380px;
+        bottom: 80px;
+    }
+    #create-message {
+        width: 300px;
+        height: 100px;
+    }
+    #create-message a {
+        width: 300px;
+        font-size: 40px;
+    }
+
+    #info {
+        left: 100px;
+        bottom: 5px;
+        font-size: 60px;
+    }
+}
+
+@media (width: 912px) and (height: 1368px) {
+    body {
+        background-size: 100% 100%;
+    }
+
+    #sky {
+        scale: 150%;
+    }
+    #sea {
+        scale: 100%;
+        position: absolute;
+        right: 0px;
+        top: 900px;
+    }
+    .star {
+        right: 10px;
+        scale: 90%;
+    }
+    #island {
+        scale: 100%;
+        left: 380px;
+        bottom: 80px;
+    }
+    #create-message {
+        width: 300px;
+        height: 100px;
+    }
+    #create-message a {
+        width: 300px;
+        font-size: 40px;
+    }
+
+    #info {
+        left: 100px;
+        bottom: 5px;
+        font-size: 60px;
+    }
+}
+
+@media (width: 540px) and (height: 720px) {
+    body {
+        background-size: 130% 126%;
+    }
+
+    #sky {
+        scale: 100%;
+        position: absolute;
+        left: 270px;
+    }
+    #sea {
+        scale: 100%;
+        position: absolute;
+        right: 0px;
+        top: 600px;
+    }
+    .star {
+        right: 10px;
+        scale: 90%;
+    }
+    #island {
+        scale: 90%;
+        left: 290px;
+        top: 750px;
+    }
+    #create-message {
+        width: 300px;
+        height: 100px;
+    }
+    #create-message a {
+        width: 300px;
+        font-size: 40px;
+    }
+
+    #info {
+        left: 100px;
+        bottom: -130px;
+        font-size: 40px;
+    }
+}
+
+
+@media (width: 344px) and (height: 882px) {
+    body {
+        background-size: 100% 100%;
+    }
+
+    #sky {
+        scale: 100%;
+    }
+    #sea {
+        scale: 50%;
+        position: absolute;
+        right: 70px;
+        top: 530px;
+    }
+    .star {
+        right: -20px;
+        scale: 50%;
+    }
+    #island {
+        scale: 60%;
+        left: 140px;
+        bottom: 50px;
+    }
+    #create-message {
+        width: 300px;
+        height: 100px;
+    }
+    #create-message a {
+        width: 300px;
+        font-size: 40px;
+    }
+
+    #info {
+        left: 30px;
+        bottom: 5px;
+        font-size: 40px;
+    }
+}
+
+
+@media (width: 853px) and (height: 1280px) {
+    body {
+        background-size: 100% 100%;
+    }
+
+    #sky {
+        scale: 150%;
+    }
+    #sea {
+        scale: 100%;
+        position: absolute;
+        right: 0px;
+        top: 900px;
+    }
+    .star {
+        right: 10px;
+        scale: 90%;
+    }
+    #island {
+        scale: 120%;
+        left: 300px;
+        bottom: 80px;
+    }
+    #create-message {
+        width: 300px;
+        height: 100px;
+    }
+    #create-message a {
+        width: 300px;
+        font-size: 40px;
+    }
+
+    #info {
+        left: 100px;
+        bottom: 5px;
+        font-size: 60px;
+    }
+}
+
+@media (width: 412px) and (height: 914px) {
+    body {
+        background-size: 100% 100%;
+    }
+
+    #sky {
+        scale: 100%;
+    }
+    #sea {
+        scale: 60%;
+        position: absolute;
+        right: 70px;
+        top: 600px;
+    }
+    .star {
+        right: -20px;
+        scale: 50%;
+    }
+    #island {
+        scale: 60%;
+        left: 140px;
+        bottom: 50px;
+    }
+    #create-message {
+        width: 300px;
+        height: 100px;
+    }
+    #create-message a {
+        width: 300px;
+        font-size: 40px;
+    }
+
+    #info {
+        left: 30px;
+        bottom: 5px;
+        font-size: 40px;
+    }
+}
+
+@media (width: 1024px) and (height: 600px) {
+    body {
+        background-size: 100% 100%;
+    }
+
+    #sky {
+        scale: 100%;
+    }
+    #sea {
+        scale: 100%;
+        position: absolute;
+        right: 0px;
+        top: 350px;
+    }
+    
+    
+}
+
+@media (width: 1280px) and (height: 800px) {
+    body {
+        background-size: 100% 100%;
+    }
+
+    #sky {
+        scale: 100%;
+    }
+    #sea {
+        scale: 100%;
+        position: absolute;
+        right: 0px;
+        top: 500px;
+    }
+    
+    
+}
+
+
 
